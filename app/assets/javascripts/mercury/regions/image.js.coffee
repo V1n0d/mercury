@@ -30,7 +30,7 @@ class @Mercury.Regions.Image extends Mercury.Region
       return if @previewing
       event.preventDefault()
       event.originalEvent.dataTransfer.dropEffect = 'copy'
-
+      console.log(@element,'try')
     @element.on 'drop', (event) =>
       return if @previewing
       if event.originalEvent.dataTransfer.files.length
